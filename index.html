@@ -44,7 +44,14 @@
                 </div>
                 <h1 class="text-xl font-bold">Maju Jaya</h1>
             </div>
-            
+            <!-- Role Switcher -->
+            <div class="hidden md:block">
+                <label for="roleSwitcher" class="mr-2 text-sm">Sebagai:</label>
+                <select id="roleSwitcher" class="text-blue-800 rounded px-2 py-1">
+                    <option value="customer">Customer</option>
+                    <option value="admin">Admin</option>
+                </select>
+            </div>
             <nav class="hidden md:flex space-x-8">
                 <a href="#home" class="hover:text-orange-300 transition">Beranda</a>
                 <a href="#products" class="hover:text-orange-300 transition">Produk</a>
@@ -62,6 +69,14 @@
                     <i class="fas fa-bars text-xl"></i>
                 </button>
             </div>
+        </div>
+        <!-- Mobile Role Switcher -->
+        <div class="md:hidden px-4 py-2 bg-blue-700 flex justify-end">
+            <label for="roleSwitcherMobile" class="mr-2 text-sm text-white">Sebagai:</label>
+            <select id="roleSwitcherMobile" class="text-blue-800 rounded px-2 py-1">
+                <option value="customer">Customer</option>
+                <option value="admin">Admin</option>
+            </select>
         </div>
         
         <!-- Mobile menu -->
@@ -577,9 +592,31 @@
             }
             cartTotal.textContent = 'Rp ' + total.toLocaleString();
         }
+        // --- ROLE SWITCHER LOGIC ---
+        function getRole() {
+            return localStorage.getItem('userRole') || 'customer';
+        }
+        function setRole(role) {
+            localStorage.setItem('userRole', role);
+            document.getElementById('roleSwitcher').value = role;
+            document.getElementById('roleSwitcherMobile').value = role;
+        }
+        // Sync role switchers
+        document.getElementById('roleSwitcher').addEventListener('change', function() {
+            setRole(this.value);
+        });
+        document.getElementById('roleSwitcherMobile').addEventListener('change', function() {
+            setRole(this.value);
+        });
+        // On load, set role
+        setRole(getRole());
         // Add to cart
         document.querySelectorAll('.add-to-cart').forEach(btn => {
             btn.addEventListener('click', function() {
+                if (getRole() === 'admin') {
+                    alert('Admin tidak dapat membeli produk.');
+                    return;
+                }
                 const card = this.closest('.product-card');
                 const id = card.getAttribute('data-id');
                 const name = card.getAttribute('data-name');
