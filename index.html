@@ -107,7 +107,7 @@
             
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Product 1 -->
-                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 transition hover:border-orange-300">
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 transition hover:border-orange-300" data-id="semen" data-name="Semen Tipe I" data-price="75000" data-img="semen.jpg">
                     <div class="relative">
                         <img src="semen.jpg" alt="Semen berkualitas tinggi dalam kantong 50kg dengan merek terkenal" class="w-full h-48 object-cover">
                         <div class="absolute top-2 left-2 bg-orange-500 text-white text-xs px-2 py-1 rounded">Best Seller</div>
@@ -135,7 +135,7 @@
                 </div>
                 
                 <!-- Product 2 -->
-                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 transition hover:border-orange-300">
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 transition hover:border-orange-300" data-id="bata" data-name="Bata Merah" data-price="1200000" data-img="bata merah.jpg">
                     <div class="relative">
                         <img src="bata merah.jpg" alt="Bata merah dengan ukuran standar tersusun rapi siap digunakan" class="w-full h-48 object-cover">
                     </div>
@@ -162,7 +162,7 @@
                 </div>
                 
                 <!-- Product 3 -->
-                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 transition hover:border-orange-300">
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 transition hover:border-orange-300" data-id="cat" data-name="Cat Tembok" data-price="185000" data-img="cat tembok.jpg">
                     <div class="relative">
                         <img src="cat tembok.jpg" alt="Cat tembok dengan berbagai pilihan warna dalam kaleng berukuran berbeda" class="w-full h-48 object-cover">
                         <div class="absolute top-2 left-2 bg-green-500 text-white text-xs px-2 py-1 rounded">Eco Friendly</div>
@@ -190,7 +190,7 @@
                 </div>
                 
                 <!-- Product 4 -->
-                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 transition hover:border-orange-300">
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 transition hover:border-orange-300" data-id="besi" data-name="Besi Beton" data-price="65000" data-img="besi.jpg">
                     <div class="relative">
                         <img src="besi.jpg" alt="Besi beton berbagai ukuran dengan tekstur permukaan yang kuat" class="w-full h-48 object-cover">
                         <div class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded">Limited</div>
@@ -233,50 +233,45 @@
                 <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Temukan semua kebutuhan bangunan Anda dalam berbagai kategori produk kami</p>
             </div>
             
-            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
                 <!-- Category 1 -->
-                <a href="#" class="category-card bg-white rounded-lg shadow-sm p-4 text-center hover:shadow-md transition group">
-                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-blue-200 transition">
+                <a href="#" class="category-card bg-white rounded-lg shadow-sm p-4 text-center hover:shadow-md transition group flex flex-col items-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-3 group-hover:bg-blue-200 transition">
                         <i class="fas  fa-cart-plus text-blue-300 text-2xl"></i>
                     </div>
                     <h3 class="font-medium text-gray-800">Material Dasar</h3>
                 </a>
-                
                 <!-- Category 2 -->
-                <a href="#" class="category-card bg-white rounded-lg shadow-sm p-4 text-center hover:shadow-md transition group">
-                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-orange-200 transition">
+                <a href="#" class="category-card bg-white rounded-lg shadow-sm p-4 text-center hover:shadow-md transition group flex flex-col items-center">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-3 group-hover:bg-orange-200 transition">
                         <i class="fas fa-trowel text-orange-800 text-2xl"></i>
                     </div>
                     <h3 class="font-medium text-gray-800">Alat Tukang</h3>
                 </a>
-                
                 <!-- Category 3 -->
-                <a href="#" class="category-card bg-white rounded-lg shadow-sm p-4 text-center hover:shadow-md transition group">
-                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-green-200 transition">
+                <a href="#" class="category-card bg-white rounded-lg shadow-sm p-4 text-center hover:shadow-md transition group flex flex-col items-center">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-3 group-hover:bg-green-200 transition">
                         <i class="fas fa-paint-roller text-green-800 text-2xl"></i>
                     </div>
                     <h3 class="font-medium text-gray-800">Cat & Finishing</h3>
                 </a>
-                
                 <!-- Category 4 -->
-                <a href="#" class="category-card bg-white rounded-lg shadow-sm p-4 text-center hover:shadow-md transition group">
-                    <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-yellow-200 transition">
+                <a href="#" class="category-card bg-white rounded-lg shadow-sm p-4 text-center hover:shadow-md transition group flex flex-col items-center">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-3 group-hover:bg-yellow-200 transition">
                         <i class="fas fa-toilet text-yellow-800 text-2xl"></i>
                     </div>
                     <h3 class="font-medium text-gray-800">Sanitasi</h3>
                 </a>
-                
                 <!-- Category 5 -->
-                <a href="#" class="category-card bg-white rounded-lg shadow-sm p-4 text-center hover:shadow-md transition group">
-                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-purple-200 transition">
+                <a href="#" class="category-card bg-white rounded-lg shadow-sm p-4 text-center hover:shadow-md transition group flex flex-col items-center">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-3 group-hover:bg-purple-200 transition">
                         <i class="fas fa-lightbulb text-purple-800 text-2xl"></i>
                     </div>
                     <h3 class="font-medium text-gray-800">Listrik</h3>
                 </a>
-                
                 <!-- Category 6 -->
-                <a href="#" class="category-card bg-white rounded-lg shadow-sm p-4 text-center hover:shadow-md transition group">
-                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-red-200 transition">
+                <a href="#" class="category-card bg-white rounded-lg shadow-sm p-4 text-center hover:shadow-md transition group flex flex-col items-center">
+                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-3 group-hover:bg-red-200 transition">
                         <i class="fas fa-tools text-red-800 text-2xl"></i>
                     </div>
                     <h3 class="font-medium text-gray-800">Peralatan</h3>
@@ -517,6 +512,131 @@
         
         // Check on scroll
         window.addEventListener('scroll', animateOnScroll);
+
+        // --- CART CRUD LOGIC ---
+        const cartKey = 'tokoCart';
+        const cartCount = document.querySelector('.cart-count');
+        const cartBtn = document.querySelector('.fa-shopping-cart').parentElement;
+        
+        // Create cart modal
+        let cartModal = document.createElement('div');
+        cartModal.id = 'cartModal';
+        cartModal.className = 'fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50 hidden';
+        cartModal.innerHTML = `
+        <div class="bg-white rounded-lg shadow-lg w-full max-w-md p-6 relative">
+            <button id="closeCart" class="absolute top-2 right-2 text-gray-500 hover:text-red-500"><i class="fas fa-times"></i></button>
+            <h2 class="text-xl font-bold mb-4 text-blue-800">Keranjang Belanja</h2>
+            <div id="cartItems" class="space-y-4"></div>
+            <div class="flex justify-between items-center mt-6">
+                <span class="font-bold text-lg">Total: <span id="cartTotal">Rp 0</span></span>
+                <button id="clearCart" class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded">Kosongkan</button>
+            </div>
+        </div>`;
+        document.body.appendChild(cartModal);
+
+        function getCart() {
+            return JSON.parse(localStorage.getItem(cartKey) || '[]');
+        }
+        function setCart(cart) {
+            localStorage.setItem(cartKey, JSON.stringify(cart));
+        }
+        function updateCartCount() {
+            const cart = getCart();
+            let count = 0;
+            cart.forEach(item => count += item.qty);
+            cartCount.textContent = count;
+        }
+        function renderCart() {
+            const cart = getCart();
+            const cartItems = document.getElementById('cartItems');
+            const cartTotal = document.getElementById('cartTotal');
+            cartItems.innerHTML = '';
+            let total = 0;
+            if (cart.length === 0) {
+                cartItems.innerHTML = '<p class="text-gray-500 text-center">Keranjang kosong.</p>';
+            } else {
+                cart.forEach(item => {
+                    total += item.price * item.qty;
+                    cartItems.innerHTML += `
+                    <div class="flex items-center justify-between border-b pb-2">
+                        <div class="flex items-center">
+                            <img src="${item.img}" alt="${item.name}" class="w-12 h-12 object-cover rounded mr-3">
+                            <div>
+                                <div class="font-medium">${item.name}</div>
+                                <div class="text-sm text-gray-500">Rp ${item.price.toLocaleString()} x ${item.qty}</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <button class="update-qty px-2 py-1 bg-blue-100 rounded text-blue-800" data-id="${item.id}" data-action="dec">-</button>
+                            <span>${item.qty}</span>
+                            <button class="update-qty px-2 py-1 bg-blue-100 rounded text-blue-800" data-id="${item.id}" data-action="inc">+</button>
+                            <button class="remove-item text-red-500 ml-2" data-id="${item.id}"><i class="fas fa-trash"></i></button>
+                        </div>
+                    </div>`;
+                });
+            }
+            cartTotal.textContent = 'Rp ' + total.toLocaleString();
+        }
+        // Add to cart
+        document.querySelectorAll('.add-to-cart').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const card = this.closest('.product-card');
+                const id = card.getAttribute('data-id');
+                const name = card.getAttribute('data-name');
+                const price = parseInt(card.getAttribute('data-price'));
+                const img = card.getAttribute('data-img');
+                let cart = getCart();
+                const idx = cart.findIndex(item => item.id === id);
+                if (idx > -1) {
+                    cart[idx].qty++;
+                } else {
+                    cart.push({id, name, price, img, qty: 1});
+                }
+                setCart(cart);
+                updateCartCount();
+            });
+        });
+        // Open cart modal
+        cartBtn.addEventListener('click', function() {
+            renderCart();
+            cartModal.classList.remove('hidden');
+        });
+        // Close cart modal
+        cartModal.addEventListener('click', function(e) {
+            if (e.target === cartModal || e.target.id === 'closeCart') {
+                cartModal.classList.add('hidden');
+            }
+        });
+        // Update qty/remove/clear
+        cartModal.addEventListener('click', function(e) {
+            if (e.target.classList.contains('update-qty')) {
+                const id = e.target.getAttribute('data-id');
+                const action = e.target.getAttribute('data-action');
+                let cart = getCart();
+                const idx = cart.findIndex(item => item.id === id);
+                if (idx > -1) {
+                    if (action === 'inc') cart[idx].qty++;
+                    if (action === 'dec') cart[idx].qty = Math.max(1, cart[idx].qty - 1);
+                    setCart(cart);
+                    renderCart();
+                    updateCartCount();
+                }
+            }
+            if (e.target.classList.contains('remove-item') || e.target.closest('.remove-item')) {
+                const id = e.target.getAttribute('data-id') || e.target.closest('.remove-item').getAttribute('data-id');
+                let cart = getCart().filter(item => item.id !== id);
+                setCart(cart);
+                renderCart();
+                updateCartCount();
+            }
+            if (e.target.id === 'clearCart') {
+                setCart([]);
+                renderCart();
+                updateCartCount();
+            }
+        });
+        // On load
+        updateCartCount();
     </script>
 </body>
 </html>
